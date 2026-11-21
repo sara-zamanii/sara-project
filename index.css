@@ -455,289 +455,132 @@ body{
     position: relative;
     top: -170px;
 }
-/* TABLET */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
 
-    .navbar a {
-        font-size: 25px;
-    }
-
-    .header-buttons a {
-        transform: none;
-        padding: 8px 15px;
-        font-size: 16px;
-    }
-
-    .hero-content {
-        margin-left: 0;
-        padding-left: 45%;
-        margin-top: -500px;
-    }
-
-    .hero h1 {
-        font-size: 50px;
-    }
-
-    .hero p {
-        font-size: 20px;
-    }
-
-    .about-card {
-        width: 65%;
-        height: auto;
-        min-height: 700px;
-    }
-
-    .about-text p {
-        font-size: 19px;
-        line-height: 2;
-        margin-right: 0;
-    }
-
-    .about-decor {
-        left: 60%;
-        width: 40%;
-    }
-
-    .about-decor img {
+    html, body {
         width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
     }
-
-    .photo {
-        width: 45%;
-    }
-
-    .features-content {
-        padding-left: 45%;
-    }
-
-    .features-content li {
-        font-size: 20px;
-    }
-
-    .service-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        padding: 20px;
-    }
-
-    .service-cards {
-        width: 100%;
-    }
-
-    .services-section h2 {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .contact-section {
-        flex-direction: column;
-    }
-
-    .contact-form {
-        width: 90%;
-    }
-
-    .photo3 {
-        display: none;
-    }
-
-    .contact-info,
-    .contact-container {
-        width: 100%;
-    }
-}
-
-
-/* MOBILE */
-@media (max-width: 767px) {
 
     * {
-        max-width: 100%;
+        box-sizing: border-box;
     }
 
+    /* HEADER */
+
     .header {
-        position: relative;
-        top: 0;
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        width: 100%;
+        left: 0;
     }
 
     .navbar {
-        position: relative;
-        left: auto;
+        width: 100%;
+        left: 0;
         transform: none;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .navbar a {
-        font-size: 16px;
-        margin: 0;
-    }
-
-    .header-buttons {
-        justify-content: center;
     }
 
     .header-buttons a {
         transform: none;
-        font-size: 15px;
-        padding: 8px 18px;
     }
 
+    /* HERO */
+
     .hero {
-        min-height: auto;
-        padding: 20px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .hero > img {
         width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
     .hero-content {
+        width: 100%;
+        padding: 15px;
         margin: 0;
-        padding: 20px 0;
-        text-align: center;
     }
 
-    .hero h1 {
-        font-size: 35px;
-    }
-
-    .hero p {
-        font-size: 17px;
-        line-height: 1.8;
-    }
+    /* ABOUT */
 
     .about-section {
-        padding: 20px 15px;
-        min-height: auto;
-    }
-
-    .about-section h2 {
-        padding: 20px 0;
-        text-align: center;
+        width: 100%;
+        overflow: hidden;
     }
 
     .about-card {
         width: 100%;
-        height: auto;
-        min-height: 0;
         margin: 0;
-        padding: 35px 20px;
-    }
-
-    .about-text h3 {
-        font-size: 27px;
-        margin: 0;
-    }
-
-    .about-text p {
-        font-size: 16px;
-        line-height: 1.8;
-        margin: 15px 0 0;
-        padding: 0;
     }
 
     .about-decor {
-        position: relative;
-        width: 100%;
         left: auto;
-        top: auto;
+        right: 0;
+        width: 100%;
     }
 
     .about-decor img {
         width: 100%;
+        max-width: 100%;
     }
 
+    /* FEATURES */
+
     .features-section {
-        min-height: auto;
-        padding: 20px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .photo {
-        position: relative;
         width: 100%;
-        top: auto;
-        left: auto;
+        max-width: 100%;
+        position: relative;
+        left: 0;
     }
 
     .features-content {
-        padding: 20px 0;
-        margin: 0;
-        min-height: auto;
+        width: 100%;
+        padding: 20px;
     }
 
-    .features-content h2 {
-        padding: 0;
-        text-align: center;
-        font-size: 32px;
-    }
+    /* SERVICES */
 
-    .features-content li {
-        font-size: 16px;
-        padding: 8px 0;
-        line-height: 1.8;
+    .services-section {
+        width: 100%;
     }
 
     .service-container {
+        width: 100%;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-        padding: 15px;
     }
 
     .photo2 {
         display: none;
     }
 
-    .services-section h2 {
-        padding: 30px 0;
-        text-align: center;
-        font-size: 30px;
-    }
-
     .service-cards {
         width: 100%;
-        height: 180px;
-        margin: 0;
-        padding: 10px;
+        min-width: 0;
     }
 
-    .service-cards img {
-        width: 60px;
-        height: 60px;
-    }
+    /* CONTACT */
 
-    .service-cards p {
-        font-size: 15px;
-    }
     .contact-section {
-        flex-direction: column;
+        width: 100%;
         padding: 25px 15px;
-        gap: 30px;
+        overflow: hidden;
     }
 
     .contact-form {
         width: 100%;
-        min-height: auto;
-        padding: 25px 18px;
+        min-width: 0;
         transform: none;
-    }
-
-    .contact-form h2 {
-        font-size: 28px;
-    }
-
-    .contact-form p {
-        font-size: 16px;
     }
 
     .contact-form form {
         width: 100%;
-        top: 0;
     }
 
     .photo3 {
@@ -747,34 +590,12 @@ body{
     .contact-info,
     .contact-container {
         width: 100%;
+        min-width: 0;
     }
 
     .contact-cards {
         width: 100%;
-        height: auto;
-        min-height: 65px;
-        top: 0;
-        flex-direction: row;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .contact-cards img {
-        width: 40px;
-        height: 40px;
-        position: static;
-    }
-
-    .contact-cards h3 {
-        font-size: 20px;
-        position: static;
-    }
-
-    .contact-cards p {
-        font-size: 14px;
-        line-height: 1.5;
-        position: static;
-        margin: 5px 0;
+        min-width: 0;
     }
 
 }
