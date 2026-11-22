@@ -612,4 +612,8 @@ body{
     white-space: nowrap;
     color:#814a61;
 }
+section {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
 }
