@@ -543,6 +543,7 @@ body{
     gap: 8px;
     position: relative;
     top: 0;
+    background-color:#f5e9df
 }
 
 .navbar {
@@ -554,7 +555,6 @@ body{
     align-items: center;
     gap: 8px;
     min-width: 0;
-    background-color:#f5e9df ;
 }
 
 .navbar a {
