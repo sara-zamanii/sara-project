@@ -776,7 +776,7 @@ section {
 
 }/* CONTACT SECTION - MOBILE */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
     .contact-section {
         display: grid;
@@ -792,7 +792,7 @@ section {
 
     /* Contact information */
 
-    .contact-info {
+    /* .contact-info {
         display: contents;
     }
 
@@ -859,11 +859,11 @@ section {
         top: auto;
         object-fit: contain;
         align-self: center;
-    }
+    } */
 
     /* Contact form */
 
-    .contact-form {
+    /* .contact-form {
         grid-column: 3;
         grid-row: 1;
         width: 100%;
@@ -930,6 +930,180 @@ section {
     .sign-buttons a {
         font-size: 11px;
         padding: 8px 15px;
+        transform: none;
+    } */
+/* CONTACT - MINIMAL MOBILE DESIGN */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr 0.65fr 1fr;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        min-height: auto;
+        padding: 20px 8px;
+        box-sizing: border-box;
+        background: #e8eee5;
+        overflow: hidden;
+    }
+
+    /* CONTACT INFORMATION */
+
+    .contact-info {
+        display: contents;
+    }
+
+    .contact-info > .contact-cards {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+        min-width: 0;
+    }
+
+    .contact-info > .contact-cards > .contact-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+    }
+
+    .contact-cards img {
+        width: 19px;
+        height: 19px;
+        object-fit: contain;
+        flex-shrink: 0;
+        position: static;
+        margin: 0;
+    }
+
+    .contact-cards h3 {
+        font-size: clamp(9px, 2.6vw, 13px);
+        color: #36513c;
+        position: static;
+        margin: 0 0 3px;
+    }
+
+    .contact-cards p {
+        font-size: clamp(8px, 2vw, 10px);
+        line-height: 1.4;
+        color: #667461;
+        position: static;
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* FLOWER */
+
+    .photo3 {
+        grid-column: 2;
+        grid-row: 1;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        left: auto;
+        right: auto;
+        top: auto;
+        object-fit: contain;
+        align-self: center;
+    }
+
+    /* FORM */
+
+    .contact-form {
+        grid-column: 3;
+        grid-row: 1;
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        padding: 12px 8px;
+        border-radius: 15px;
+        background: #f8faf6;
+        box-shadow: 2px 4px 12px rgba(75, 95, 70, 0.12);
+        transform: none;
+        gap: 10px;
+    }
+
+    .contact-form h2 {
+        font-size: clamp(12px, 3.2vw, 17px);
+        color: #36513c;
+        margin: 0;
+    }
+
+    .contact-form p {
+        font-size: clamp(8px, 2.1vw, 11px);
+        line-height: 1.5;
+        color: #667461;
+        margin: 0;
+    }
+
+    .contact-form form {
+        width: 100%;
+        padding: 5px;
+        background: transparent;
+        gap: 7px;
+        top: 0;
+    }
+
+    .contact-form input {
+        height: 34px;
+        padding: 0 6px;
+        font-size: 9px;
+        border: 1px solid #e1e8dc;
+        border-radius: 7px;
+        background: white;
+    }
+
+    .contact-form textarea {
+        height: 65px;
+        padding: 8px 6px;
+        font-size: 9px;
+        border: 1px solid #e1e8dc;
+        border-radius: 7px;
+        background: white;
+    }
+
+    .contact-form button {
+        height: 35px;
+        margin-top: 5px;
+        font-size: 11px;
+        border-radius: 9px;
+        background: #73966b;
+    }
+
+    .contact-form button:hover {
+        background: #587a52;
+    }
+
+    /* LOGIN AND SIGN UP */
+
+    .sign-buttons {
+        grid-column: 1 / -1;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    .sign-buttons a {
+        font-size: 11px;
+        padding: 8px 18px;
+        background: #f8faf6;
+        border: 1px solid #dce6d7;
+        border-radius: 12px;
         transform: none;
     }
 
