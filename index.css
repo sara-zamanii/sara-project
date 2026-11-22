@@ -599,6 +599,10 @@ section {
         box-sizing: border-box;
         border-radius: 20px;
         align-self: stretch;
+        border:none;
+        box-shadow: inset 3px 3px 6px #c5b8ad,
+        inset -3px -3px 6px #ffffff;
+                      };
     }
 
     .about-text {
@@ -743,6 +747,7 @@ section {
         left: auto;
         z-index: 0;
         opacity: 0.45;
+        display: none;
     }
 
     .service-cards {
