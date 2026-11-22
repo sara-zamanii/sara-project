@@ -528,7 +528,7 @@ body{
 }
 @media (max-width: 768px) {
 
-.header {
+/* .header {
     position: relative;
     top: 0;
     left: 0;
@@ -572,6 +572,52 @@ body{
     font-size: 9px;
     padding: 5px 7px;
     border-width: 1px;
+    white-space: nowrap;
+}
+
+} */
+@media (max-width: 768px) {
+
+.header {
+    width: 100%;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    position: relative;
+    top: 0;
+}
+
+.navbar {
+    position: static;
+    transform: none;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.navbar a {
+    font-size: clamp(10px, 2.8vw, 16px);
+    margin: 0;
+    white-space: nowrap;
+}
+
+.header-buttons {
+    display: flex;
+    flex-shrink: 0;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.header-buttons a {
+    transform: none;
+    font-size: 11px;
+    padding: 7px 9px;
     white-space: nowrap;
 }
 
