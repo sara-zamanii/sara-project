@@ -600,11 +600,9 @@ section {
         border-radius: 20px;
         align-self: stretch;
         border:none;
-        box-shadow: inset 3px 3px 6px #c5b8ad,
-        inset -3px -3px 6px #ffffff;
-                      };
+        box-shadow: inset 2px 2px 4px #eeded0,
+        inset -2px -2px 5px #ffffff;
     }
-
     .about-text {
         width: 100%;
     }
@@ -776,7 +774,7 @@ section {
 
 }/* CONTACT SECTION - MOBILE */
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .contact-section {
         display: grid;
@@ -792,7 +790,7 @@ section {
 
     /* Contact information */
 
-    /* .contact-info {
+     .contact-info {
         display: contents;
     }
 
@@ -859,11 +857,11 @@ section {
         top: auto;
         object-fit: contain;
         align-self: center;
-    } */
+    } 
 
     /* Contact form */
 
-    /* .contact-form {
+     .contact-form {
         grid-column: 3;
         grid-row: 1;
         width: 100%;
@@ -931,7 +929,8 @@ section {
         font-size: 11px;
         padding: 8px 15px;
         transform: none;
-    } */
+    }
+}
 /* CONTACT - MINIMAL MOBILE DESIGN */
 
 @media (max-width: 768px) {
