@@ -472,7 +472,6 @@ body{
     color: black;
     font-size: 22px;
     background: #e1fcdd;
-    border: 3px solid  ;
     border-radius: 20px;
     box-sizing: border-box;
     padding:20px 60px;
@@ -604,11 +603,13 @@ body{
     align-items: center;
     gap: 8px;
     min-width: 0;
+    background-color:#f5e9df ;
 }
 
 .navbar a {
     font-size: clamp(10px, 2.8vw, 16px);
     margin: 0;
     white-space: nowrap;
+    color:#814a61;
 }
 }
