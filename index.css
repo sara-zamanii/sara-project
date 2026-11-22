@@ -858,6 +858,7 @@ section {
         top: auto;
         object-fit: contain;
         align-self: center;
+        display: none;
     }
 
     /* FORM */
