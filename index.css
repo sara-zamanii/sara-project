@@ -132,8 +132,8 @@ body{
     transition: none;
 }
   .about-decor >img{
-    width: 900px;
-    height: auto;
+    width: 700px;
+    height: 1180px;
     max-width: none;
     display: block;
     left: 800px;
