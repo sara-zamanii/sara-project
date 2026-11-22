@@ -539,6 +539,7 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 5px;
+    background-color: #f5e9df;
 }
 
 .navbar {
@@ -556,6 +557,7 @@ body{
     font-size: clamp(8px, 2.5vw, 13px);
     margin: 0;
     white-space: nowrap;
+    gap:10px;
 }
 
 .header-buttons {
