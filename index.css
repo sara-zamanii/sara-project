@@ -547,10 +547,11 @@ body{
     transform: none;
     display: flex;
     flex: 1;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: clamp(4px, 1.5vw, 10px);
+    gap:15px;
     min-width: 0;
+    padding-left: 8px;
 }
 
 .navbar a {
